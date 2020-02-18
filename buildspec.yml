@@ -11,7 +11,7 @@ phases:
       - npm install
   build:
     commands:
-      - echo building... attempt 4...
+      - echo building... attempt 5..
   post_build:
     commands:
       - aws cloudformation package --template-file template.yaml --output-template-file serverless-output.yaml --s3-bucket brandonvio-re-demo-api

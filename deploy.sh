@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo ##################### Package
 aws cloudformation package --template-file template.yaml --output-template-file serverless-output.yaml --s3-bucket reallo-api
 

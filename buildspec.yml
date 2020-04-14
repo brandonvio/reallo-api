@@ -14,5 +14,5 @@ phases:
       - echo building... attempt 5..
   post_build:
     commands:
-      - aws cloudformation package --template-file template.yaml --output-template-file serverless-output.yaml --s3-bucket reallo-api
+      - aws cloudformation package --template-file template.yaml --output-template-file serverless-output.yaml --s3-bucket codepipeline-us-west-2-reallo-api
       - aws cloudformation deploy --template-file serverless-output.yaml --stack-name redemo --capabilities CAPABILITY_IAM

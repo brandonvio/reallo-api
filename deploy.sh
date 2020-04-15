@@ -5,4 +5,4 @@ aws cloudformation package --template-file template.yaml --output-template-file 
 
 
 echo ##################### Deploy
-aws cloudformation deploy --template-file serverless-output.yaml --stack-name redemo --capabilities CAPABILITY_IAM
+aws cloudformation deploy --template-file serverless-output.yaml --stack-name reallo-api --capabilities CAPABILITY_IAM
